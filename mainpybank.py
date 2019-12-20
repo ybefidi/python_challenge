@@ -1,0 +1,29 @@
+import os
+import csv
+budget_data_csv = os.path.join('..', 'PyBank', 'budget_data.csv')
+x = int
+dates = str('budget_data'[0])
+total = 0
+profit = 0
+
+with open(budget_data_csv, 'r') as csvfile:
+  csvreader = csv.reader(csvfile, delimiter=',')
+
+  for row in csvreader:
+
+    date = row[1]
+
+
+    
+
+    total = total + 1
+
+    print(date + ": " + "month: " + str(total - 1))
+  
+
+    
+
+
+
+
+
